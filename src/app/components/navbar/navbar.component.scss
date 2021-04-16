@@ -1,0 +1,36 @@
+@import '../../../assets/partials/variables';
+
+nav {
+    a {
+    text-decoration: none;
+    color: black;
+    font-family: $titleFont;
+    cursor: pointer; 
+    padding: 10px;
+    padding-top: 30px;
+    }
+
+    .logo {
+        img {
+            margin-right: 30px;
+        }
+
+        a {
+            span:first-child {color: $primaryColor};
+            span:nth-child(3n) {color: $secondaryColor};
+            span:last-child {color: $terciaryColor};
+        }
+
+    }
+
+    .links {
+        :hover {
+            color: $secondaryColor
+        }
+    }
+
+    .active {
+        color: $secondaryColor;
+    }
+}
+
