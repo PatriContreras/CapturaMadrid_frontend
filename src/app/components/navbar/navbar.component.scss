@@ -1,5 +1,10 @@
 @import '../../../assets/partials/variables';
 
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 nav {
     a {
     text-decoration: none;
@@ -29,8 +34,8 @@ nav {
         }
     }
 
-    .active {
-        color: $secondaryColor;
-    }
+    // .active {
+    //     color: $secondaryColor;
+    // }
 }
 
