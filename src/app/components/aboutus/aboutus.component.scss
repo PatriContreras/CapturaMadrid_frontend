@@ -1,0 +1,40 @@
+@import '../../../assets/partials/variables';
+
+
+
+h1 {
+    font-family: $titleFont;
+    font-size: 1.5em;
+}
+
+// p {
+//     color: $terciaryColor;
+// }
+
+
+
+img {
+    width:300px;
+    height:auto;
+    //border-radius:150px;
+   
+}
+
+.container {
+    display: flex;
+}
+
+.container__column {
+    flex: 1;
+    /* Space between columns */
+    margin: 0 8px;
+
+    /* Layout each column */
+    display: flex;
+    flex-direction: column;
+}
+
+.container__content {
+    /* Take available height */
+    flex: 1;
+}
