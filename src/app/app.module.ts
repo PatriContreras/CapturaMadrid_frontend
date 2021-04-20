@@ -8,6 +8,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { EventsComponent } from './components/events/events.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
