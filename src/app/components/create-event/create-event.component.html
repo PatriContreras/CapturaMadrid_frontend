@@ -1,1 +1,47 @@
-<p>create-event works!</p>
+<div class="container">
+    <h1>Crear un evento</h1>
+    <hr>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="title">Título</label>
+            <input type="text" class="form-control" id="title" formControlName="title">
+        </div>
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="image">Imagen</label>
+            <input type="text" class="form-control" id="image" formControlName="image">
+        </div>
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="place">Lugar</label>
+            <input type="text" class="form-control" id="place" formControlName="place">
+        </div>
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="model">Modelo</label>
+            <input type="text" class="form-control" id="model" formControlName="model">
+        </div>
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="makeup">Maquillaje</label>
+            <input type="text" class="form-control" id="makeup" formControlName="makeup">
+        </div>
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="price">Precio</label>
+            <input type="text" class="form-control" id="price" formControlName="price">
+        </div>
+        <div class="form-group" class="col-12 col-md-6">
+            <label for="description">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                formControlName="description"></textarea>
+        </div>
+
+        <div class="container">
+            <div class="form-check" class="col-12 col-md-12">
+                <input type="checkbox" class="form-check-input" id="complete" formControlName="complete">
+                <label class="form-check-label" for="complete">Completo</label>
+            </div>
+
+            <button type="submit" class="btn" value="Guardar">Submit</button>
+
+        </div>
+
+
+    </form>
+</div>

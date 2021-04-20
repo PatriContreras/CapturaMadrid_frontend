@@ -1,0 +1,41 @@
+@import '../../../assets/partials/variables';
+
+
+h1 {
+    font-family: $titleFont;
+    color: $secondaryColor;
+    text-align: center;
+}
+
+hr{
+    width: 20%;
+    padding: 20px;
+    border-top: 1px solid $terciaryColor;
+}
+
+form {
+    margin: 0 auto;
+    font-size: 1.2em;
+    div {
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+.form-check {
+    margin-left: 20px;
+}
+
+button {
+    background-color: $secondaryColor;
+    font-size: 1em;
+    
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $secondaryColor;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(194, 231, 29, 0.25);
+}

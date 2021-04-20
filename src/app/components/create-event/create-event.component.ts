@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-create-event',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateEventComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup;
+
+  constructor() {
+    this.form = new FormGroup({
+      title: new FormControl(),
+      image: new FormControl(),
+      place: new FormControl(),
+      model: new FormControl(),
+      makeup: new FormControl(),
+      price: new FormControl(),
+      description: new FormControl(),
+      complete: new FormControl(),
+
+    })
+  }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    console.log(this.form.value);
+
   }
 
 }
