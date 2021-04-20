@@ -9,6 +9,8 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { EventsComponent } from './components/events/events.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LoginComponent } from './components/login/login.component';
+import { CreateEventComponent } from './components/create-event/create-event.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PortfolioComponent,
     AboutusComponent,
     EventsComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule,
