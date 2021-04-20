@@ -1,0 +1,27 @@
+@import '../../../assets/partials/variables';
+
+
+h1 {
+    font-family: $titleFont;
+    color: $secondaryColor;
+    text-align: center;
+}
+
+hr{
+    width: 20%;
+    padding: 20px;
+    border-top: 1px solid $terciaryColor;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    padding: 5px;
+}
+
+button {
+    background-color: $secondaryColor;
+}
