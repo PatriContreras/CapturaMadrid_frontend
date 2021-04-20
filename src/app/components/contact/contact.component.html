@@ -1,20 +1,38 @@
-<p>contact works!</p>
-
 <main>
-    <div>
-        <i>
-            <fa-icon [icon]="faEnvelope"></fa-icon>
-            <fa-icon [icon]="faPhone"></fa-icon>
-            <fa-icon [icon]="faLocation"></fa-icon>
+    <div class="container">
+        <div class="col-12 title">
+            <h1>
+                Contacta con nosotros
+            </h1>
+            <h2>
+                ¡Estaremos encantados de informarte de todo lo que hacemos!
+            </h2>
+        </div>
 
-        </i>
+        <div class="grid">
+            <div class="col-12 col-md-6">
+                <div class="icon-container">
+                    <fa-icon [icon]="faEnvelope" class="icon"></fa-icon>
+                    <p>capturamadridfotografia@gmail.com</p>
+                </div>
+                <div class="icon-container">
+                    <fa-icon [icon]="faPhone" class="icon"> </fa-icon>
+                    <p>+34 635 407 402 </p>
+                    <p>|</p>
+                    <p>+34 635 407 402</p>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6" class="location">
+                <fa-icon [icon]="faLocation" class="icon"></fa-icon>
+                <p> Calle de Sierra Toledana, 53B, 28038 Madrid </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.1962758608156!2d-3.661686184294087!3d40.4045024643063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4225fcd11f4963%3A0x34a5b48b555f608!2sSingular%20Garage!5e0!3m2!1ses!2ses!4v1618916660211!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
     </div>
 
-    <div>
-        <i></i>
-    </div>
-
-    <div>
-        <i></i>
-    </div>
 </main>

@@ -1,0 +1,57 @@
+@import '../../../assets/partials/variables';
+
+main {
+    //background-image: url('https://format-com-cld-res.cloudinary.com/image/private/s--sualo326--/c_crop,h_1335,w_1975,x_0,y_0/c_fill,g_center,h_1200,w_1600/fl_keep_iptc.progressive,q_95/v1/4933965b6d64348d7553e1311db6491e/estudio_alquiler_profoto.jpg');
+    background-position: center;
+    background-size: cover;
+    //background-color: rgba(0, 0, 0, 0.986);
+    //filter:brightness(1.2)
+
+}
+
+.container {
+    p {
+        display: inline;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+
+
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+        h1 {
+            font-family: $titleFont;
+            color: $secondaryColor;
+        }
+        h2 {
+            color: $terciaryColor;
+            font-size: 1.5em;
+            padding-top: 20px;
+        }
+    }
+    
+}
+.icon {
+    color: $secondaryColor;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.icon-container {
+    padding: 20px 0px;
+}
+
+.location {
+    padding: 20px 0px;
+    iframe {
+        padding-top: 10px;
+    }
+
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+
+}
