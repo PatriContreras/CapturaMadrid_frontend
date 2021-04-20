@@ -1,40 +1,38 @@
 @import '../../../assets/partials/variables';
 
-
-
-h1 {
-    font-family: $titleFont;
-    font-size: 1.5em;
+.row  {
+ div{
+    text-align: center;
 }
-
-// p {
-//     color: $terciaryColor;
-// }
-
-
-
-img {
-    width:300px;
-    height:auto;
-    //border-radius:150px;
    
 }
 
-.container {
-    display: flex;
+h1 {
+    font-family: $titleFont;
+    font-size: 1.7em;
+    margin-top: 30px;
 }
 
-.container__column {
-    flex: 1;
-    /* Space between columns */
-    margin: 0 8px;
+.col-12 {
+    margin-bottom: 50px;
+    p {
+        color: $terciaryColor;
+    }
 
-    /* Layout each column */
-    display: flex;
-    flex-direction: column;
+    hr {
+        width: 25%;
+    }
 }
 
-.container__content {
-    /* Take available height */
-    flex: 1;
+.photo {
+    background-image: url('../../images/ALEX2.jpg');
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+   // border: 3px solid $secondaryColor;
+    border-radius: 50%;
+
 }
+
