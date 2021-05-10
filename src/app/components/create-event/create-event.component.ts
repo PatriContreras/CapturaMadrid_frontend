@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
+
 @Component({
   selector: 'app-create-event',
   templateUrl: './create-event.component.html',
@@ -18,6 +19,8 @@ export class CreateEventComponent implements OnInit {
       model: new FormControl(),
       makeup: new FormControl(),
       price: new FormControl(),
+      date: new FormControl(),
+      time: new FormControl(),
       description: new FormControl(),
       complete: new FormControl(),
 
@@ -33,3 +36,5 @@ export class CreateEventComponent implements OnInit {
   }
 
 }
+
+
