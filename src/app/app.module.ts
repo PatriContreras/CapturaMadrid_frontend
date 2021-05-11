@@ -13,6 +13,7 @@ import { LoginComponent } from './components/login/login.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http'
 
 
 
@@ -33,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FontAwesomeModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpClientModule
 
   ],
   providers: [],
