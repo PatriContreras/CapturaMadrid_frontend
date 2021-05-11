@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
+import { EventService } from 'src/app/services/event.service';
 
 
 @Component({
@@ -13,8 +14,10 @@ export class CreateEventComponent implements OnInit {
   public archivos: any = []
   form: FormGroup;
   base64: any;
+  event: Event;
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer,
+    private eventService: EventService) {
     this.form = new FormGroup({
       title: new FormControl(),
       image: new FormControl(),
@@ -54,6 +57,7 @@ export class CreateEventComponent implements OnInit {
         );
       };
       reader.onerror = error => {
+
         resolve(
           null);
       };
@@ -63,10 +67,11 @@ export class CreateEventComponent implements OnInit {
     }
   })
 
-  onSubmit() {
+  async onSubmit() {
     try {
       this.form.value.image = this.base64;
-      console.log(this.form.value);
+      const response = await this.eventService.insertEvent(this.form.value)
+      console.log(response);
 
     } catch (e) {
       console.log('ERROR', e);
